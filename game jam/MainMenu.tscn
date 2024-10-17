@@ -1,16 +1,16 @@
 [gd_scene load_steps=3 format=3 uid="uid://b8ophk67ymsjf"]
 
 [ext_resource type="Texture2D" uid="uid://br42bu4ob1k8l" path="res://assets/date or die.png" id="1_7ltbb"]
-[ext_resource type="Texture2D" uid="uid://b1vs0h2r24xxv" path="res://assets/checkerboard.png" id="1_ta4kc"]
+[ext_resource type="Texture2D" uid="uid://b10t1v32k5ntc" path="res://assets/checkerboard2.png" id="1_a2r6y"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(954, 537)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("1_ta4kc")
+texture = ExtResource("1_a2r6y")
 
 [node name="Date or Die" type="Sprite2D" parent="."]
-position = Vector2(954, 200)
-scale = Vector2(5, 5)
+position = Vector2(954, 290)
+scale = Vector2(7, 7)
 texture = ExtResource("1_7ltbb")
