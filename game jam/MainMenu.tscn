@@ -1,32 +1,19 @@
 [gd_scene load_steps=5 format=3 uid="uid://b8ophk67ymsjf"]
 
 [ext_resource type="Texture2D" uid="uid://br42bu4ob1k8l" path="res://assets/date or die.png" id="1_7ltbb"]
-<<<<<<< HEAD
-[ext_resource type="Texture2D" uid="uid://b10t1v32k5ntc" path="res://assets/checkerboard2.png" id="1_a2r6y"]
-=======
-[ext_resource type="Texture2D" uid="uid://bspgrrbxodhcb" path="res://assets/checkerboard2.png" id="1_gapeq"]
+[ext_resource type="Texture2D" uid="uid://b1uwps3hhchsm" path="res://assets/checkerboard2.png" id="1_gapeq"]
 [ext_resource type="Texture2D" uid="uid://pu1qu8ljdaky" path="res://assets/start.png" id="3_d3jn3"]
 [ext_resource type="Script" path="res://button.gd" id="3_qeasl"]
->>>>>>> a74359d (Finished main menu)
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
-<<<<<<< HEAD
-position = Vector2(954, 537)
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("1_a2r6y")
-
-[node name="Date or Die" type="Sprite2D" parent="."]
-position = Vector2(954, 290)
-=======
 position = Vector2(958, 542)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("1_gapeq")
 
 [node name="Title" type="Sprite2D" parent="."]
 position = Vector2(954, 300)
->>>>>>> a74359d (Finished main menu)
 scale = Vector2(7, 7)
 texture = ExtResource("1_7ltbb")
 
