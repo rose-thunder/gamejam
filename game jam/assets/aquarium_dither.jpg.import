@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://bpc7u7nvu3i2h"
+=======
+uid="uid://cgqtlbaa4f5wl"
+>>>>>>> a74359d (Finished main menu)
 valid=false
 
 [deps]

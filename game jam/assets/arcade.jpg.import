@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://b4ktxnywsq4on"
+=======
+uid="uid://c5nrdgfhgh2st"
+>>>>>>> a74359d (Finished main menu)
 path="res://.godot/imported/arcade.jpg-f030ea26f693e1f4bfe7b23cd2cbd0c6.ctex"
 metadata={
 "vram_texture": false
