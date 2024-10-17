@@ -28,8 +28,8 @@ func _process(delta):
 	
 	var index = $typed.text.length() -1
 	if index >=0 and $typed.text[index] != $backdrop.text[index] and typeable == true and $typed.text.length() >= 0:
-		rizz-=1
 		$typed.backspace()
+		rizz-=1
 		$AnimationPlayer.play("shake")
 	
 	pass
