@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dp0angip200rp"
-path="res://.godot/imported/arcade.jpg-f030ea26f693e1f4bfe7b23cd2cbd0c6.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://xxt1l0jae55t"
+valid=false
 
 [deps]
 
-source_file="res://assets/arcade.jpg"
-dest_files=["res://.godot/imported/arcade.jpg-f030ea26f693e1f4bfe7b23cd2cbd0c6.ctex"]
+source_file="res://assets/aquarium_dither.jpg"
 
 [params]
 
