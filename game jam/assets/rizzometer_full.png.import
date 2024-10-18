@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://caerek8ekmghk"
-path="res://.godot/imported/checkerboard2.png-cfd2a8441090b30697bebcbf38cbab78.ctex"
+uid="uid://l23xm6pe1tt6"
+path="res://.godot/imported/rizzometer_full.png-688c13701cf09bdb4d6de851a3c907fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/checkerboard2.png"
-dest_files=["res://.godot/imported/checkerboard2.png-cfd2a8441090b30697bebcbf38cbab78.ctex"]
+source_file="res://assets/rizzometer_full.png"
+dest_files=["res://.godot/imported/rizzometer_full.png-688c13701cf09bdb4d6de851a3c907fa.ctex"]
 
 [params]
 
