@@ -9,13 +9,8 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
-	
-var custom = false
-
 
 
 func _on_pressed() -> void:
-	if custom == true:
-		get_tree().change_scene_to_file("res://scenes/typing.tscn")
-	else: 
-		get_tree().change_scene_to_file("res://characterCustomization.tscn")
+	
+	pass # Replace with function body.
