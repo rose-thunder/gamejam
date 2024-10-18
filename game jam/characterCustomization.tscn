@@ -1,17 +1,50 @@
-[gd_scene load_steps=4 format=3 uid="uid://domreoxq45pp6"]
+[gd_scene load_steps=7 format=3 uid="uid://domreoxq45pp6"]
 
-[ext_resource type="Texture2D" uid="uid://b1uwps3hhchsm" path="res://assets/checkerboard2.png" id="1_dbu5o"]
 [ext_resource type="Texture2D" uid="uid://djof07jhc2vq1" path="res://assets/text box.png" id="2_l0wk0"]
 [ext_resource type="FontFile" uid="uid://30oag2tv4q1w" path="res://assets/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="3_nwldk"]
+[ext_resource type="Texture2D" uid="uid://6mr4hnkew5cs" path="res://assets/checkerboards/checkerboard2.png" id="3_s8bm8"]
+
+[sub_resource type="Animation" id="Animation_xbvdj"]
+resource_name = "move"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(842, 542), Vector2(787, 542)]
+}
+
+[sub_resource type="Animation" id="Animation_beo7q"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(954, 300)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_j7c0x"]
+_data = {
+"RESET": SubResource("Animation_beo7q"),
+"move": SubResource("Animation_xbvdj")
+}
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Background" type="Sprite2D" parent="."]
-position = Vector2(958, 542)
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("1_dbu5o")
-
 [node name="textBox" type="Sprite2D" parent="."]
+z_index = 1
 position = Vector2(1200, 886)
 scale = Vector2(10, 8.64444)
 texture = ExtResource("2_l0wk0")
@@ -24,3 +57,14 @@ offset_bottom = 10.9
 theme_override_fonts/font = ExtResource("3_nwldk")
 theme_override_font_sizes/font_size = 0
 text = "Customize your date!"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_j7c0x")
+}
+autoplay = "move"
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(954, 300)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_s8bm8")
