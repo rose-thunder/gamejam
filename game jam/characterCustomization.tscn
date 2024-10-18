@@ -1,14 +1,18 @@
-[gd_scene load_steps=13 format=3 uid="uid://domreoxq45pp6"]
+[gd_scene load_steps=17 format=3 uid="uid://domreoxq45pp6"]
 
 [ext_resource type="Texture2D" uid="uid://ddnfq1muk6bvw" path="res://assets/RC/rc overalls skin tone 4.png" id="1_ajxyj"]
+[ext_resource type="Texture2D" uid="uid://cjhp6d5m0hmwn" path="res://assets/arrow_right.png" id="1_ey64d"]
 [ext_resource type="Texture2D" uid="uid://d0skw13c1wvgf" path="res://assets/text_box.png" id="1_gu03t"]
 [ext_resource type="FontFile" uid="uid://biekrowj30rpa" path="res://assets/ldfcomicsans-font/Ldfcomicsanslight-6dZo.ttf" id="2_bnls7"]
 [ext_resource type="Texture2D" uid="uid://d0v3y1ypvyc8b" path="res://assets/RC/rc overalls skin tone 3.png" id="2_u7qid"]
+[ext_resource type="Script" path="res://right.gd" id="2_ycrxe"]
 [ext_resource type="Texture2D" uid="uid://6mr4hnkew5cs" path="res://assets/checkerboards/checkerboard2.png" id="3_s8bm8"]
 [ext_resource type="Texture2D" uid="uid://ciermrtlnp8kx" path="res://assets/RC/rc overalls skin tone 2.png" id="3_uy2bu"]
 [ext_resource type="Texture2D" uid="uid://bdcads7hvosh1" path="res://assets/RC/rc overalls skin tone 1.png" id="4_sn0bs"]
 [ext_resource type="Script" path="res://texture_button.gd" id="9_vimq5"]
 [ext_resource type="Texture2D" uid="uid://nj3w8pnhuy80" path="res://assets/arrow_left.png" id="11_16850"]
+[ext_resource type="Texture2D" uid="uid://crx4lbofffy4x" path="res://assets/start.png" id="12_i0hrp"]
+[ext_resource type="Script" path="res://start.gd" id="13_45uu6"]
 
 [sub_resource type="Animation" id="Animation_beo7q"]
 length = 0.001
@@ -49,7 +53,19 @@ _data = {
 
 [node name="Node2D" type="Node2D"]
 
-[node name="TextureButton" type="TextureButton" parent="."]
+[node name="right" type="TextureButton" parent="."]
+z_index = 1
+offset_left = 1305.0
+offset_top = 225.0
+offset_right = 1362.0
+offset_bottom = 279.0
+scale = Vector2(7, 7)
+texture_normal = ExtResource("1_ey64d")
+texture_pressed = ExtResource("1_ey64d")
+texture_hover = ExtResource("1_ey64d")
+script = ExtResource("2_ycrxe")
+
+[node name="left" type="TextureButton" parent="."]
 z_index = 1
 offset_left = 432.0
 offset_top = 225.0
@@ -114,4 +130,18 @@ position = Vector2(954, 300)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("3_s8bm8")
 
+[node name="TextureButton" type="TextureButton" parent="."]
+z_index = 1
+offset_left = 1512.0
+offset_top = 533.0
+offset_right = 1712.0
+offset_bottom = 633.0
+scale = Vector2(7, 7)
+texture_normal = ExtResource("12_i0hrp")
+texture_pressed = ExtResource("12_i0hrp")
+texture_hover = ExtResource("12_i0hrp")
+script = ExtResource("13_45uu6")
+
+[connection signal="pressed" from="right" to="right" method="_on_pressed"]
+[connection signal="pressed" from="left" to="left" method="_on_pressed"]
 [connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]

@@ -1,6 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dmc0q5fqvb1ro"]
+[gd_scene load_steps=9 format=3 uid="uid://dmc0q5fqvb1ro"]
 
 [ext_resource type="Script" path="res://typing.gd" id="1_6xqec"]
+[ext_resource type="Texture2D" uid="uid://cm220afkh8ti7" path="res://assets/resturant4.jpg" id="2_8w0qu"]
+[ext_resource type="Texture2D" uid="uid://d0skw13c1wvgf" path="res://assets/text_box.png" id="3_fs03c"]
+[ext_resource type="FontFile" uid="uid://biekrowj30rpa" path="res://assets/ldfcomicsans-font/Ldfcomicsanslight-6dZo.ttf" id="3_mmsqr"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2o70k"]
 
@@ -43,15 +46,22 @@ _data = {
 [node name="Typing" type="Node2D"]
 script = ExtResource("1_6xqec")
 
+[node name="background" type="Sprite2D" parent="."]
+texture = ExtResource("2_8w0qu")
+
 [node name="backdrop" type="Label" parent="."]
-offset_left = 36.0
-offset_top = 11.0
-offset_right = 1125.0
-offset_bottom = 660.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+z_index = 1
+offset_left = -150.0
+offset_top = 350.0
+offset_right = 939.0
+offset_bottom = 999.0
+scale = Vector2(2, 2)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_mmsqr")
 text = "Type this stuff or else"
 
 [node name="typed" type="TextEdit" parent="."]
+z_index = 1
 offset_left = 35.664
 offset_top = 7.213
 offset_right = 1124.66
@@ -63,10 +73,12 @@ selecting_enabled = false
 minimap_width = 466
 
 [node name="Camera2D" type="Camera2D" parent="."]
+z_index = 1
 position = Vector2(323, 170)
 zoom = Vector2(1.909, 1.909)
 
 [node name="rizz" type="Label" parent="."]
+z_index = 1
 offset_left = 246.0
 offset_top = 146.0
 offset_right = 309.0
@@ -77,3 +89,8 @@ libraries = {
 "": SubResource("AnimationLibrary_jcsmk")
 }
 speed_scale = 10.0
+
+[node name="textBox" type="Sprite2D" parent="."]
+position = Vector2(322.25, 360)
+scale = Vector2(0.523698, 0.513889)
+texture = ExtResource("3_fs03c")
