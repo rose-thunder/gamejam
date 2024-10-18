@@ -10,8 +10,13 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 	
+var custom = false
+
 
 
 func _on_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/typing.tscn")
+	if custom == true:
+		get_tree().change_scene_to_file("res://scenes/typing.tscn")
+	else: 
+		get_tree().change_scene_to_file("res://characterCustomization.tscn")
 	pass # Replace with function body.
