@@ -59,6 +59,7 @@ scale = Vector2(2, 2)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_mmsqr")
 text = "Type this stuff or else"
+autowrap_mode = 3
 
 [node name="typed" type="TextEdit" parent="."]
 z_index = 1
@@ -68,8 +69,8 @@ offset_right = 1124.66
 offset_bottom = 656.213
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_2o70k")
-text = " "
 selecting_enabled = false
+wrap_mode = 1
 minimap_width = 466
 
 [node name="Camera2D" type="Camera2D" parent="."]
