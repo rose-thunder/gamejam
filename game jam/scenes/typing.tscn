@@ -91,6 +91,6 @@ libraries = {
 speed_scale = 10.0
 
 [node name="textBox" type="Sprite2D" parent="."]
-position = Vector2(322.25, 360)
+position = Vector2(323, 363)
 scale = Vector2(0.523698, 0.513889)
 texture = ExtResource("3_fs03c")

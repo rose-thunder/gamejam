@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://domreoxq45pp6"]
+[gd_scene load_steps=30 format=3 uid="uid://domreoxq45pp6"]
 
 [ext_resource type="Texture2D" uid="uid://ddnfq1muk6bvw" path="res://assets/RC/rc overalls skin tone 4.png" id="1_ajxyj"]
 [ext_resource type="Texture2D" uid="uid://cjhp6d5m0hmwn" path="res://assets/arrow_right.png" id="1_ey64d"]
@@ -12,6 +12,10 @@
 [ext_resource type="Texture2D" uid="uid://nj3w8pnhuy80" path="res://assets/arrow_left.png" id="11_16850"]
 [ext_resource type="Texture2D" uid="uid://crx4lbofffy4x" path="res://assets/start.png" id="12_i0hrp"]
 [ext_resource type="Script" path="res://start.gd" id="13_45uu6"]
+[ext_resource type="Texture2D" uid="uid://dkc7jkaqpx3f2" path="res://assets/RC/cassidy.png" id="13_na64t"]
+[ext_resource type="Texture2D" uid="uid://bwecfynuvk3qo" path="res://assets/RC/elli.png" id="14_aky18"]
+[ext_resource type="Texture2D" uid="uid://4hjjopvuw6mk" path="res://assets/RC/jack.png" id="15_ba8k6"]
+[ext_resource type="Texture2D" uid="uid://cj417rthqu104" path="res://assets/RC/renee.png" id="16_0nckv"]
 
 [sub_resource type="Animation" id="Animation_beo7q"]
 length = 0.001
@@ -101,15 +105,66 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_wli6w"]
+atlas = ExtResource("13_na64t")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bh8rf"]
+atlas = ExtResource("14_aky18")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_glfat"]
+atlas = ExtResource("15_ba8k6")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wrcak"]
+atlas = ExtResource("16_0nckv")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6b7au"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wli6w")
+}],
+"loop": true,
+"name": &"Cassidy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bh8rf")
+}],
+"loop": true,
+"name": &"Elli",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_glfat")
+}],
+"loop": true,
+"name": &"Jack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wrcak")
+}],
+"loop": true,
+"name": &"Renee",
+"speed": 5.0
+}]
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_sg3f0")
 
 [node name="right" type="TextureButton" parent="."]
 z_index = 1
 offset_left = 1305.0
-offset_top = 225.0
+offset_top = 350.0
 offset_right = 1362.0
-offset_bottom = 279.0
+offset_bottom = 404.0
 scale = Vector2(7, 7)
 texture_normal = ExtResource("1_ey64d")
 texture_pressed = ExtResource("1_ey64d")
@@ -118,9 +173,9 @@ texture_hover = ExtResource("1_ey64d")
 [node name="left" type="TextureButton" parent="."]
 z_index = 1
 offset_left = 432.0
-offset_top = 225.0
+offset_top = 350.0
 offset_right = 489.0
-offset_bottom = 279.0
+offset_bottom = 404.0
 scale = Vector2(7, 7)
 texture_normal = ExtResource("11_16850")
 texture_pressed = ExtResource("11_16850")
@@ -169,11 +224,40 @@ script = ExtResource("13_45uu6")
 
 [node name="RCSkin" type="AnimatedSprite2D" parent="."]
 z_index = 1
-position = Vector2(974, 449)
-scale = Vector2(11.9531, 11.3438)
+position = Vector2(975.25, 448.501)
+scale = Vector2(11.9922, 11.3594)
 sprite_frames = SubResource("SpriteFrames_cuaqb")
 animation = &"RC4"
-frame_progress = 0.0404246
+frame_progress = 0.916827
+
+[node name="RCHair" type="AnimatedSprite2D" parent="."]
+z_index = 1
+position = Vector2(973.5, 409)
+scale = Vector2(11.2031, 10.4062)
+sprite_frames = SubResource("SpriteFrames_6b7au")
+animation = &"Jack"
+
+[node name="left1" type="TextureButton" parent="."]
+z_index = 1
+offset_left = 432.0
+offset_top = 66.0
+offset_right = 489.0
+offset_bottom = 120.0
+scale = Vector2(7, 7)
+texture_normal = ExtResource("11_16850")
+texture_pressed = ExtResource("11_16850")
+texture_hover = ExtResource("11_16850")
+
+[node name="right1" type="TextureButton" parent="."]
+z_index = 1
+offset_left = 1305.0
+offset_top = 66.0
+offset_right = 1362.0
+offset_bottom = 120.0
+scale = Vector2(7, 7)
+texture_normal = ExtResource("1_ey64d")
+texture_pressed = ExtResource("1_ey64d")
+texture_hover = ExtResource("1_ey64d")
 
 [connection signal="pressed" from="right" to="." method="_on_right_pressed"]
 [connection signal="pressed" from="right" to="right" method="_on_pressed"]
@@ -181,3 +265,5 @@ frame_progress = 0.0404246
 [connection signal="pressed" from="left" to="left" method="_on_pressed"]
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="start" to="start" method="_on_pressed"]
+[connection signal="pressed" from="left1" to="." method="_on_left_1_pressed"]
+[connection signal="pressed" from="right1" to="." method="_on_right_1_pressed"]
