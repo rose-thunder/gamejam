@@ -1,0 +1,91 @@
+[gd_scene load_steps=9 format=3 uid="uid://bek2qej7drjbc"]
+
+[ext_resource type="Texture2D" uid="uid://e22du0ooh5qo" path="res://assets/blackScreen.jpeg" id="1_ca037"]
+[ext_resource type="Script" path="res://prologue.gd" id="1_xufr4"]
+[ext_resource type="FontFile" uid="uid://biekrowj30rpa" path="res://assets/ldfcomicsans-font/Ldfcomicsanslight-6dZo.ttf" id="2_d2j4m"]
+[ext_resource type="Texture2D" uid="uid://crx4lbofffy4x" path="res://assets/start.png" id="3_ep37j"]
+[ext_resource type="FontFile" uid="uid://30oag2tv4q1w" path="res://assets/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="5_41w7p"]
+
+[sub_resource type="Animation" id="Animation_t8sjq"]
+resource_name = "fade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureButton:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_iicqg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureButton:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eh26q"]
+_data = {
+"RESET": SubResource("Animation_iicqg"),
+"fade": SubResource("Animation_t8sjq")
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_xufr4")
+
+[node name="Black" type="Sprite2D" parent="."]
+scale = Vector2(10, 10)
+texture = ExtResource("1_ca037")
+
+[node name="mainText" type="Label" parent="."]
+z_index = 1
+offset_right = 1926.0
+offset_bottom = 1093.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_d2j4m")
+theme_override_font_sizes/font_size = 60
+text = "You are Mario.
+You have had enough with your brain constantly telling you that you'll be
+lonely forever.
+You decide to take matters into your own hands and attempt to fix this.
+You will die if you do not get a date by the end of the weekend. "
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_eh26q")
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+modulate = Color(1, 1, 1, 0)
+z_index = 4
+offset_left = 700.0
+offset_top = 670.0
+offset_right = 764.0
+offset_bottom = 720.0
+scale = Vector2(7, 7)
+texture_normal = ExtResource("3_ep37j")
+texture_pressed = ExtResource("3_ep37j")
+texture_hover = ExtResource("3_ep37j")
+
+[node name="goodLuck" type="Label" parent="."]
+offset_left = 750.0
+offset_top = 550.0
+offset_right = 1054.0
+offset_bottom = 621.0
+theme_override_fonts/font = ExtResource("5_41w7p")
+theme_override_font_sizes/font_size = 60
+text = "Good luck :)"
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

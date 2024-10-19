@@ -18,4 +18,4 @@ func _on_pressed() -> void:
 	if custom == true:
 		get_tree().change_scene_to_file("res://scenes/typing.tscn")
 	else: 
-		get_tree().change_scene_to_file("res://characterCustomization.tscn")
+		get_tree().change_scene_to_file("res://prologue.tscn")
