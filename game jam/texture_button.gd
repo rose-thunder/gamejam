@@ -1,4 +1,4 @@
-extends Button
+extends TextureButton
 
 
 # Called when the node enters the scene tree for the first time.
@@ -9,13 +9,9 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
-	
-var custom = false
-
 
 
 func _on_pressed() -> void:
-	if custom == true:
-		get_tree().change_scene_to_file("res://scenes/typing.tscn")
-	else: 
-		get_tree().change_scene_to_file("res://characterCustomization.tscn")
+	var sprite = $RC1
+	
+	$RC1.texture = load("res://assets/RC/rc overalls skin tone 4.png")

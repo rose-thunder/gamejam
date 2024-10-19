@@ -1,8 +1,20 @@
-[gd_scene load_steps=7 format=3 uid="uid://domreoxq45pp6"]
+[gd_scene load_steps=13 format=3 uid="uid://domreoxq45pp6"]
 
+<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://diwngsgjlphs7" path="res://assets/text_box.png" id="1_gu03t"]
 [ext_resource type="FontFile" uid="uid://biekrowj30rpa" path="res://assets/ldfcomicsans-font/Ldfcomicsanslight-6dZo.ttf" id="2_bnls7"]
 [ext_resource type="Texture2D" uid="uid://wc3yam6tdedh" path="res://assets/checkerboards/checkerboard2.png" id="3_s8bm8"]
+=======
+[ext_resource type="Texture2D" uid="uid://ddnfq1muk6bvw" path="res://assets/RC/rc overalls skin tone 4.png" id="1_ajxyj"]
+[ext_resource type="Texture2D" uid="uid://d0skw13c1wvgf" path="res://assets/text_box.png" id="1_gu03t"]
+[ext_resource type="FontFile" uid="uid://biekrowj30rpa" path="res://assets/ldfcomicsans-font/Ldfcomicsanslight-6dZo.ttf" id="2_bnls7"]
+[ext_resource type="Texture2D" uid="uid://d0v3y1ypvyc8b" path="res://assets/RC/rc overalls skin tone 3.png" id="2_u7qid"]
+[ext_resource type="Texture2D" uid="uid://6mr4hnkew5cs" path="res://assets/checkerboards/checkerboard2.png" id="3_s8bm8"]
+[ext_resource type="Texture2D" uid="uid://ciermrtlnp8kx" path="res://assets/RC/rc overalls skin tone 2.png" id="3_uy2bu"]
+[ext_resource type="Texture2D" uid="uid://bdcads7hvosh1" path="res://assets/RC/rc overalls skin tone 1.png" id="4_sn0bs"]
+[ext_resource type="Script" path="res://texture_button.gd" id="9_vimq5"]
+[ext_resource type="Texture2D" uid="uid://nj3w8pnhuy80" path="res://assets/arrow_left.png" id="11_16850"]
+>>>>>>> refs/remotes/origin/master
 
 [sub_resource type="Animation" id="Animation_beo7q"]
 length = 0.001
@@ -43,6 +55,42 @@ _data = {
 
 [node name="Node2D" type="Node2D"]
 
+[node name="TextureButton" type="TextureButton" parent="."]
+z_index = 1
+offset_left = 432.0
+offset_top = 225.0
+offset_right = 489.0
+offset_bottom = 279.0
+scale = Vector2(7, 7)
+texture_normal = ExtResource("11_16850")
+texture_pressed = ExtResource("11_16850")
+texture_hover = ExtResource("11_16850")
+script = ExtResource("9_vimq5")
+
+[node name="RC1" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(1000, 500)
+scale = Vector2(15, 15)
+texture = ExtResource("1_ajxyj")
+
+[node name="RC2" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(1000, 500)
+scale = Vector2(15, 15)
+texture = ExtResource("2_u7qid")
+
+[node name="RC3" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(1000, 500)
+scale = Vector2(15, 15)
+texture = ExtResource("3_uy2bu")
+
+[node name="RC4" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(1000, 500)
+scale = Vector2(15, 15)
+texture = ExtResource("4_sn0bs")
+
 [node name="textBox" type="Sprite2D" parent="."]
 z_index = 1
 position = Vector2(960, 898.625)
@@ -71,3 +119,5 @@ autoplay = "move"
 position = Vector2(954, 300)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("3_s8bm8")
+
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
