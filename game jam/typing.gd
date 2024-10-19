@@ -1,7 +1,8 @@
 extends Node2D
 var timer = 30
 var rizz = 50
-var text_list = ["Hello Mario.","Howdy RC. How's it going?",
+var RCName = "Balls"
+var text_list = ["Hello Mario.","Howdy " + RCName + ". How's it going?",
 	"Swimmingly, thanks for asking... So, tell me about yourself. I see you're a student as well, what's your major?",
 	"I'm multiclassing in Game Design and CompSci at the University of Arizona. Bear Down!",
 	'Wow! How interesting! I’m studying Business.','Oh wow! That pairs well with Game Design!',

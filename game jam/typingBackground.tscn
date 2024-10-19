@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxrti83d7ghuv"]
+
+[ext_resource type="Texture2D" uid="uid://d0skw13c1wvgf" path="res://assets/text_box.png" id="1_md36v"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(960, 900)
+texture = ExtResource("1_md36v")
