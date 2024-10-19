@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://domreoxq45pp6"]
+[gd_scene load_steps=31 format=3 uid="uid://domreoxq45pp6"]
 
 [ext_resource type="Texture2D" uid="uid://ddnfq1muk6bvw" path="res://assets/RC/rc overalls skin tone 4.png" id="1_ajxyj"]
 [ext_resource type="Texture2D" uid="uid://cjhp6d5m0hmwn" path="res://assets/arrow_right.png" id="1_ey64d"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://bwecfynuvk3qo" path="res://assets/RC/elli.png" id="14_aky18"]
 [ext_resource type="Texture2D" uid="uid://4hjjopvuw6mk" path="res://assets/RC/jack.png" id="15_ba8k6"]
 [ext_resource type="Texture2D" uid="uid://cj417rthqu104" path="res://assets/RC/renee.png" id="16_0nckv"]
+[ext_resource type="Texture2D" uid="uid://blj10d26ng766" path="res://assets/RC/rc open mouth.png" id="17_cjdat"]
 
 [sub_resource type="Animation" id="Animation_beo7q"]
 length = 0.001
@@ -258,6 +259,12 @@ scale = Vector2(7, 7)
 texture_normal = ExtResource("1_ey64d")
 texture_pressed = ExtResource("1_ey64d")
 texture_hover = ExtResource("1_ey64d")
+
+[node name="RCFace" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(975.25, 355)
+scale = Vector2(13.8125, 11.5)
+texture = ExtResource("17_cjdat")
 
 [connection signal="pressed" from="right" to="." method="_on_right_pressed"]
 [connection signal="pressed" from="right" to="right" method="_on_pressed"]
