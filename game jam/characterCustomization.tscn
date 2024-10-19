@@ -1,15 +1,14 @@
-[gd_scene load_steps=17 format=3 uid="uid://domreoxq45pp6"]
+[gd_scene load_steps=21 format=3 uid="uid://domreoxq45pp6"]
 
 [ext_resource type="Texture2D" uid="uid://ddnfq1muk6bvw" path="res://assets/RC/rc overalls skin tone 4.png" id="1_ajxyj"]
 [ext_resource type="Texture2D" uid="uid://cjhp6d5m0hmwn" path="res://assets/arrow_right.png" id="1_ey64d"]
 [ext_resource type="Texture2D" uid="uid://d0skw13c1wvgf" path="res://assets/text_box.png" id="1_gu03t"]
+[ext_resource type="Script" path="res://character_customization.gd" id="1_sg3f0"]
 [ext_resource type="FontFile" uid="uid://biekrowj30rpa" path="res://assets/ldfcomicsans-font/Ldfcomicsanslight-6dZo.ttf" id="2_bnls7"]
 [ext_resource type="Texture2D" uid="uid://d0v3y1ypvyc8b" path="res://assets/RC/rc overalls skin tone 3.png" id="2_u7qid"]
-[ext_resource type="Script" path="res://right.gd" id="2_ycrxe"]
 [ext_resource type="Texture2D" uid="uid://6mr4hnkew5cs" path="res://assets/checkerboards/checkerboard2.png" id="3_s8bm8"]
 [ext_resource type="Texture2D" uid="uid://ciermrtlnp8kx" path="res://assets/RC/rc overalls skin tone 2.png" id="3_uy2bu"]
 [ext_resource type="Texture2D" uid="uid://bdcads7hvosh1" path="res://assets/RC/rc overalls skin tone 1.png" id="4_sn0bs"]
-[ext_resource type="Script" path="res://texture_button.gd" id="9_vimq5"]
 [ext_resource type="Texture2D" uid="uid://nj3w8pnhuy80" path="res://assets/arrow_left.png" id="11_16850"]
 [ext_resource type="Texture2D" uid="uid://crx4lbofffy4x" path="res://assets/start.png" id="12_i0hrp"]
 [ext_resource type="Script" path="res://start.gd" id="13_45uu6"]
@@ -51,7 +50,59 @@ _data = {
 "move": SubResource("Animation_xbvdj")
 }
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_000m4"]
+atlas = ExtResource("4_sn0bs")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cv4xh"]
+atlas = ExtResource("3_uy2bu")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j4uj8"]
+atlas = ExtResource("2_u7qid")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2kb28"]
+atlas = ExtResource("1_ajxyj")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cuaqb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_000m4")
+}],
+"loop": true,
+"name": &"RC1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cv4xh")
+}],
+"loop": true,
+"name": &"RC2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j4uj8")
+}],
+"loop": true,
+"name": &"RC3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2kb28")
+}],
+"loop": true,
+"name": &"RC4",
+"speed": 5.0
+}]
+
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_sg3f0")
 
 [node name="right" type="TextureButton" parent="."]
 z_index = 1
@@ -63,7 +114,6 @@ scale = Vector2(7, 7)
 texture_normal = ExtResource("1_ey64d")
 texture_pressed = ExtResource("1_ey64d")
 texture_hover = ExtResource("1_ey64d")
-script = ExtResource("2_ycrxe")
 
 [node name="left" type="TextureButton" parent="."]
 z_index = 1
@@ -75,34 +125,9 @@ scale = Vector2(7, 7)
 texture_normal = ExtResource("11_16850")
 texture_pressed = ExtResource("11_16850")
 texture_hover = ExtResource("11_16850")
-script = ExtResource("9_vimq5")
-
-[node name="RC1" type="Sprite2D" parent="."]
-z_index = 1
-position = Vector2(1000, 500)
-scale = Vector2(15, 15)
-texture = ExtResource("1_ajxyj")
-
-[node name="RC2" type="Sprite2D" parent="."]
-z_index = 1
-position = Vector2(1000, 500)
-scale = Vector2(15, 15)
-texture = ExtResource("2_u7qid")
-
-[node name="RC3" type="Sprite2D" parent="."]
-z_index = 1
-position = Vector2(1000, 500)
-scale = Vector2(15, 15)
-texture = ExtResource("3_uy2bu")
-
-[node name="RC4" type="Sprite2D" parent="."]
-z_index = 1
-position = Vector2(1000, 500)
-scale = Vector2(15, 15)
-texture = ExtResource("4_sn0bs")
 
 [node name="textBox" type="Sprite2D" parent="."]
-z_index = 1
+z_index = 2
 position = Vector2(960, 898.625)
 scale = Vector2(1, 1.01319)
 texture = ExtResource("1_gu03t")
@@ -130,7 +155,7 @@ position = Vector2(954, 300)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("3_s8bm8")
 
-[node name="TextureButton" type="TextureButton" parent="."]
+[node name="start" type="TextureButton" parent="."]
 z_index = 1
 offset_left = 1512.0
 offset_top = 533.0
@@ -142,6 +167,17 @@ texture_pressed = ExtResource("12_i0hrp")
 texture_hover = ExtResource("12_i0hrp")
 script = ExtResource("13_45uu6")
 
+[node name="RCSkin" type="AnimatedSprite2D" parent="."]
+z_index = 1
+position = Vector2(974, 449)
+scale = Vector2(11.9531, 11.3438)
+sprite_frames = SubResource("SpriteFrames_cuaqb")
+animation = &"RC4"
+frame_progress = 0.0404246
+
+[connection signal="pressed" from="right" to="." method="_on_right_pressed"]
 [connection signal="pressed" from="right" to="right" method="_on_pressed"]
+[connection signal="pressed" from="left" to="." method="_on_left_pressed"]
 [connection signal="pressed" from="left" to="left" method="_on_pressed"]
-[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="start" to="start" method="_on_pressed"]
