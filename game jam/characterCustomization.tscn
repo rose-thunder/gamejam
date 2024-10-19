@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://d0skw13c1wvgf" path="res://assets/text_box.png" id="1_gu03t"]
 [ext_resource type="FontFile" uid="uid://biekrowj30rpa" path="res://assets/ldfcomicsans-font/Ldfcomicsanslight-6dZo.ttf" id="2_bnls7"]
 [ext_resource type="Texture2D" uid="uid://d0v3y1ypvyc8b" path="res://assets/RC/rc overalls skin tone 3.png" id="2_u7qid"]
-[ext_resource type="Texture2D" uid="uid://6mr4hnkew5cs" path="res://assets/checkerboards/checkerboard2.png" id="3_s8bm8"]
+[ext_resource type="Texture2D" uid="uid://wc3yam6tdedh" path="res://assets/checkerboards/checkerboard2.png" id="3_s8bm8"]
 [ext_resource type="Texture2D" uid="uid://ciermrtlnp8kx" path="res://assets/RC/rc overalls skin tone 2.png" id="3_uy2bu"]
 [ext_resource type="Texture2D" uid="uid://bdcads7hvosh1" path="res://assets/RC/rc overalls skin tone 1.png" id="4_sn0bs"]
 [ext_resource type="Script" path="res://texture_button.gd" id="9_vimq5"]
@@ -62,24 +62,28 @@ texture_hover = ExtResource("11_16850")
 script = ExtResource("9_vimq5")
 
 [node name="RC1" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 z_index = 1
 position = Vector2(1000, 500)
 scale = Vector2(15, 15)
 texture = ExtResource("1_ajxyj")
 
 [node name="RC2" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 z_index = 1
 position = Vector2(1000, 500)
 scale = Vector2(15, 15)
 texture = ExtResource("2_u7qid")
 
 [node name="RC3" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 z_index = 1
 position = Vector2(1000, 500)
 scale = Vector2(15, 15)
 texture = ExtResource("3_uy2bu")
 
 [node name="RC4" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 z_index = 1
 position = Vector2(1000, 500)
 scale = Vector2(15, 15)
