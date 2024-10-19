@@ -11,7 +11,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	#skinList[index]
+	var RCName = $textBox/TextEdit.text
+	
 	if index == 0:
 		$RCSkin.play("RC1")
 	elif index == 1:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://domreoxq45pp6"]
+[gd_scene load_steps=32 format=3 uid="uid://domreoxq45pp6"]
 
 [ext_resource type="Texture2D" uid="uid://ddnfq1muk6bvw" path="res://assets/RC/rc overalls skin tone 4.png" id="1_ajxyj"]
 [ext_resource type="Texture2D" uid="uid://cjhp6d5m0hmwn" path="res://assets/arrow_right.png" id="1_ey64d"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://6mr4hnkew5cs" path="res://assets/checkerboards/checkerboard2.png" id="3_s8bm8"]
 [ext_resource type="Texture2D" uid="uid://ciermrtlnp8kx" path="res://assets/RC/rc overalls skin tone 2.png" id="3_uy2bu"]
 [ext_resource type="Texture2D" uid="uid://bdcads7hvosh1" path="res://assets/RC/rc overalls skin tone 1.png" id="4_sn0bs"]
+[ext_resource type="FontFile" uid="uid://30oag2tv4q1w" path="res://assets/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="6_fxq05"]
 [ext_resource type="Texture2D" uid="uid://nj3w8pnhuy80" path="res://assets/arrow_left.png" id="11_16850"]
 [ext_resource type="Texture2D" uid="uid://crx4lbofffy4x" path="res://assets/start.png" id="12_i0hrp"]
 [ext_resource type="Script" path="res://start.gd" id="13_45uu6"]
@@ -188,17 +189,36 @@ position = Vector2(960, 898.625)
 scale = Vector2(1, 1.01319)
 texture = ExtResource("1_gu03t")
 
-[node name="Label" type="Label" parent="textBox"]
+[node name="Customize" type="Label" parent="textBox"]
 custom_minimum_size = Vector2(10, 10)
 offset_left = -860.0
 offset_top = -150.0
 offset_right = -118.88
 offset_bottom = 140.16
-scale = Vector2(5, 3)
 theme_override_fonts/font = ExtResource("2_bnls7")
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 80
 text = "
 	Customize your date!"
+
+[node name="Name" type="Label" parent="textBox"]
+z_index = 2
+offset_left = -869.0
+offset_top = 60.0
+offset_right = -126.0
+offset_bottom = 318.0
+theme_override_fonts/font = ExtResource("2_bnls7")
+theme_override_font_sizes/font_size = 80
+text = "Name your date:"
+
+[node name="TextEdit" type="TextEdit" parent="textBox"]
+offset_left = -290.0
+offset_top = 60.0
+offset_right = 545.0
+offset_bottom = 220.0
+theme_override_fonts/font = ExtResource("6_fxq05")
+theme_override_font_sizes/font_size = 80
+placeholder_text = "Enter your date's name!
+"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
