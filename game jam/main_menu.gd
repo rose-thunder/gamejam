@@ -12,5 +12,8 @@ func _process(delta: float) -> void:
 
 
 func _on_texture_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://characterCustomization.tscn")
+	if not FileAccess.file_exists("user://RC.cfg"):
+		get_tree().change_scene_to_file("res://characterCustomization.tscn")
+	else:
+		get_tree().change_scene_to_file("res://scenes/typing.tscn")
 	pass # Replace with function body.

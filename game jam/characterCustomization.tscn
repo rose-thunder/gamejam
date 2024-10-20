@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://domreoxq45pp6"]
+[gd_scene load_steps=34 format=3 uid="uid://domreoxq45pp6"]
 
 [ext_resource type="Texture2D" uid="uid://ddnfq1muk6bvw" path="res://assets/RC/rc overalls skin tone 4.png" id="1_ajxyj"]
 [ext_resource type="Texture2D" uid="uid://cjhp6d5m0hmwn" path="res://assets/arrow_right.png" id="1_ey64d"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://ciermrtlnp8kx" path="res://assets/RC/rc overalls skin tone 2.png" id="3_uy2bu"]
 [ext_resource type="Texture2D" uid="uid://bdcads7hvosh1" path="res://assets/RC/rc overalls skin tone 1.png" id="4_sn0bs"]
 [ext_resource type="FontFile" uid="uid://30oag2tv4q1w" path="res://assets/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="6_fxq05"]
+[ext_resource type="Script" path="res://name_input.gd" id="7_qyhp2"]
 [ext_resource type="Texture2D" uid="uid://nj3w8pnhuy80" path="res://assets/arrow_left.png" id="11_16850"]
 [ext_resource type="Texture2D" uid="uid://crx4lbofffy4x" path="res://assets/start.png" id="12_i0hrp"]
 [ext_resource type="Script" path="res://start.gd" id="13_45uu6"]
@@ -18,7 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://4hjjopvuw6mk" path="res://assets/RC/jack.png" id="15_ba8k6"]
 [ext_resource type="Texture2D" uid="uid://cj417rthqu104" path="res://assets/RC/renee.png" id="16_0nckv"]
 [ext_resource type="Texture2D" uid="uid://blj10d26ng766" path="res://assets/RC/rc open mouth.png" id="17_cjdat"]
-[ext_resource type="Script" path="res://save.gd" id="19_vkvyb"]
+[ext_resource type="Script" path="res://saveload.gd" id="19_vkvyb"]
 
 [sub_resource type="Animation" id="Animation_beo7q"]
 length = 0.001
@@ -159,7 +160,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Customization" type="Node2D"]
+[node name="Character" type="Node2D"]
 script = ExtResource("1_sg3f0")
 
 [node name="right" type="TextureButton" parent="."]
@@ -220,6 +221,7 @@ theme_override_fonts/font = ExtResource("6_fxq05")
 theme_override_font_sizes/font_size = 80
 placeholder_text = "Enter your date's name!
 "
+script = ExtResource("7_qyhp2")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -244,7 +246,7 @@ texture_pressed = ExtResource("12_i0hrp")
 texture_hover = ExtResource("12_i0hrp")
 script = ExtResource("13_45uu6")
 
-[node name="RCSkin" type="AnimatedSprite2D" parent="." groups=["Persist"]]
+[node name="RCSkin" type="AnimatedSprite2D" parent="."]
 z_index = 1
 position = Vector2(975.25, 448.501)
 scale = Vector2(11.9922, 11.3594)
@@ -252,7 +254,7 @@ sprite_frames = SubResource("SpriteFrames_cuaqb")
 animation = &"RC4"
 frame_progress = 0.916827
 
-[node name="RCHair" type="AnimatedSprite2D" parent="." groups=["Persist"]]
+[node name="RCHair" type="AnimatedSprite2D" parent="."]
 z_index = 1
 position = Vector2(973.5, 409)
 scale = Vector2(11.2031, 10.4062)
@@ -294,7 +296,10 @@ script = ExtResource("19_vkvyb")
 [connection signal="pressed" from="right" to="right" method="_on_pressed"]
 [connection signal="pressed" from="left" to="." method="_on_left_pressed"]
 [connection signal="pressed" from="left" to="left" method="_on_pressed"]
+[connection signal="rc_name" from="textBox/TextEdit" to="Save" method="_on_text_edit_rc_name"]
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="start" to="start" method="_on_pressed"]
+[connection signal="animation_changed" from="RCSkin" to="Save" method="_on_rc_skin_animation_changed"]
+[connection signal="animation_changed" from="RCHair" to="Save" method="_on_rc_hair_animation_changed"]
 [connection signal="pressed" from="left1" to="." method="_on_left_1_pressed"]
 [connection signal="pressed" from="right1" to="." method="_on_right_1_pressed"]
