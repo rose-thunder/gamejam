@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://domreoxq45pp6"]
+[gd_scene load_steps=33 format=3 uid="uid://domreoxq45pp6"]
 
 [ext_resource type="Texture2D" uid="uid://ddnfq1muk6bvw" path="res://assets/RC/rc overalls skin tone 4.png" id="1_ajxyj"]
 [ext_resource type="Texture2D" uid="uid://cjhp6d5m0hmwn" path="res://assets/arrow_right.png" id="1_ey64d"]
@@ -18,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://4hjjopvuw6mk" path="res://assets/RC/jack.png" id="15_ba8k6"]
 [ext_resource type="Texture2D" uid="uid://cj417rthqu104" path="res://assets/RC/renee.png" id="16_0nckv"]
 [ext_resource type="Texture2D" uid="uid://blj10d26ng766" path="res://assets/RC/rc open mouth.png" id="17_cjdat"]
+[ext_resource type="Script" path="res://save.gd" id="19_vkvyb"]
 
 [sub_resource type="Animation" id="Animation_beo7q"]
 length = 0.001
@@ -158,7 +159,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="Node2D"]
+[node name="Customization" type="Node2D"]
 script = ExtResource("1_sg3f0")
 
 [node name="right" type="TextureButton" parent="."]
@@ -285,6 +286,9 @@ z_index = 1
 position = Vector2(975.25, 355)
 scale = Vector2(13.8125, 11.5)
 texture = ExtResource("17_cjdat")
+
+[node name="Save" type="Node" parent="."]
+script = ExtResource("19_vkvyb")
 
 [connection signal="pressed" from="right" to="." method="_on_right_pressed"]
 [connection signal="pressed" from="right" to="right" method="_on_pressed"]
