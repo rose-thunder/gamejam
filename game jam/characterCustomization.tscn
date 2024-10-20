@@ -1,23 +1,23 @@
 [gd_scene load_steps=32 format=3 uid="uid://domreoxq45pp6"]
 
-[ext_resource type="Texture2D" uid="uid://c8utv6fcpyt5x" path="res://assets/RC/rc overalls skin tone 4.png" id="1_ajxyj"]
-[ext_resource type="Texture2D" uid="uid://35qmg54egfl8" path="res://assets/arrow_right.png" id="1_ey64d"]
-[ext_resource type="Texture2D" uid="uid://b4ekvhouwjnx2" path="res://assets/text_box.png" id="1_gu03t"]
+[ext_resource type="Texture2D" uid="uid://ddnfq1muk6bvw" path="res://assets/RC/rc overalls skin tone 4.png" id="1_ajxyj"]
+[ext_resource type="Texture2D" uid="uid://cjhp6d5m0hmwn" path="res://assets/arrow_right.png" id="1_ey64d"]
+[ext_resource type="Texture2D" uid="uid://d0skw13c1wvgf" path="res://assets/text_box.png" id="1_gu03t"]
 [ext_resource type="Script" path="res://character_customization.gd" id="1_sg3f0"]
 [ext_resource type="FontFile" uid="uid://biekrowj30rpa" path="res://assets/ldfcomicsans-font/Ldfcomicsanslight-6dZo.ttf" id="2_bnls7"]
-[ext_resource type="Texture2D" uid="uid://de661mcixn6pw" path="res://assets/RC/rc overalls skin tone 3.png" id="2_u7qid"]
-[ext_resource type="Texture2D" uid="uid://bj7767syqvoxb" path="res://assets/checkerboards/checkerboard2.png" id="3_s8bm8"]
-[ext_resource type="Texture2D" uid="uid://dy461vx1jqhk" path="res://assets/RC/rc overalls skin tone 2.png" id="3_uy2bu"]
-[ext_resource type="Texture2D" uid="uid://b11eci2pvssuy" path="res://assets/RC/rc overalls skin tone 1.png" id="4_sn0bs"]
+[ext_resource type="Texture2D" uid="uid://d0v3y1ypvyc8b" path="res://assets/RC/rc overalls skin tone 3.png" id="2_u7qid"]
+[ext_resource type="Texture2D" uid="uid://6mr4hnkew5cs" path="res://assets/checkerboards/checkerboard2.png" id="3_s8bm8"]
+[ext_resource type="Texture2D" uid="uid://ciermrtlnp8kx" path="res://assets/RC/rc overalls skin tone 2.png" id="3_uy2bu"]
+[ext_resource type="Texture2D" uid="uid://bdcads7hvosh1" path="res://assets/RC/rc overalls skin tone 1.png" id="4_sn0bs"]
 [ext_resource type="FontFile" uid="uid://30oag2tv4q1w" path="res://assets/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="6_fxq05"]
-[ext_resource type="Texture2D" uid="uid://s06usovnb5xb" path="res://assets/arrow_left.png" id="11_16850"]
-[ext_resource type="Texture2D" uid="uid://bhqxad121avq8" path="res://assets/start.png" id="12_i0hrp"]
+[ext_resource type="Texture2D" uid="uid://nj3w8pnhuy80" path="res://assets/arrow_left.png" id="11_16850"]
+[ext_resource type="Texture2D" uid="uid://crx4lbofffy4x" path="res://assets/start.png" id="12_i0hrp"]
 [ext_resource type="Script" path="res://start.gd" id="13_45uu6"]
-[ext_resource type="Texture2D" uid="uid://p1ar6j8kbb7p" path="res://assets/RC/cassidy.png" id="13_na64t"]
-[ext_resource type="Texture2D" uid="uid://dua4evmrmym8d" path="res://assets/RC/elli.png" id="14_aky18"]
-[ext_resource type="Texture2D" uid="uid://bhebgp8ihfmuv" path="res://assets/RC/jack.png" id="15_ba8k6"]
-[ext_resource type="Texture2D" uid="uid://c3lv76hm4yk0f" path="res://assets/RC/renee.png" id="16_0nckv"]
-[ext_resource type="Texture2D" uid="uid://ce6noyq1g7c0f" path="res://assets/RC/rc open mouth.png" id="17_cjdat"]
+[ext_resource type="Texture2D" uid="uid://dkc7jkaqpx3f2" path="res://assets/RC/cassidy.png" id="13_na64t"]
+[ext_resource type="Texture2D" uid="uid://bwecfynuvk3qo" path="res://assets/RC/elli.png" id="14_aky18"]
+[ext_resource type="Texture2D" uid="uid://4hjjopvuw6mk" path="res://assets/RC/jack.png" id="15_ba8k6"]
+[ext_resource type="Texture2D" uid="uid://cj417rthqu104" path="res://assets/RC/renee.png" id="16_0nckv"]
+[ext_resource type="Texture2D" uid="uid://blj10d26ng766" path="res://assets/RC/rc open mouth.png" id="17_cjdat"]
 
 [sub_resource type="Animation" id="Animation_beo7q"]
 length = 0.001
@@ -243,7 +243,7 @@ texture_pressed = ExtResource("12_i0hrp")
 texture_hover = ExtResource("12_i0hrp")
 script = ExtResource("13_45uu6")
 
-[node name="RCSkin" type="AnimatedSprite2D" parent="." groups=["Persist"]]
+[node name="RCSkin" type="AnimatedSprite2D" parent="."]
 z_index = 1
 position = Vector2(975.25, 448.501)
 scale = Vector2(11.9922, 11.3594)
@@ -251,7 +251,7 @@ sprite_frames = SubResource("SpriteFrames_cuaqb")
 animation = &"RC4"
 frame_progress = 0.916827
 
-[node name="RCHair" type="AnimatedSprite2D" parent="." groups=["Persist"]]
+[node name="RCHair" type="AnimatedSprite2D" parent="."]
 z_index = 1
 position = Vector2(973.5, 409)
 scale = Vector2(11.2031, 10.4062)
