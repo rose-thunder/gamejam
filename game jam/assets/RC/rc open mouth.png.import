@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fhilqpidj7ir"
-path="res://.godot/imported/checkerboard4.png-a856bf842d5f886eafbe9271e0ede79e.ctex"
+uid="uid://blj10d26ng766"
+path="res://.godot/imported/rc open mouth.png-9e5f431794e5c2bebd7f0a2bdd231b9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/checkerboards/checkerboard4.png"
-dest_files=["res://.godot/imported/checkerboard4.png-a856bf842d5f886eafbe9271e0ede79e.ctex"]
+source_file="res://assets/RC/rc open mouth.png"
+dest_files=["res://.godot/imported/rc open mouth.png-9e5f431794e5c2bebd7f0a2bdd231b9a.ctex"]
 
 [params]
 

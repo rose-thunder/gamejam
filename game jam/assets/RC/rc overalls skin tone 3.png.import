@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ubxwvcob72yl"
-path="res://.godot/imported/checkerboard3.png-d22a8ae9a39ecb61f128a29050e18d6a.ctex"
+uid="uid://d0v3y1ypvyc8b"
+path="res://.godot/imported/rc overalls skin tone 3.png-8a72a998ad89b357932a5e60addb0ef4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/checkerboards/checkerboard3.png"
-dest_files=["res://.godot/imported/checkerboard3.png-d22a8ae9a39ecb61f128a29050e18d6a.ctex"]
+source_file="res://assets/RC/rc overalls skin tone 3.png"
+dest_files=["res://.godot/imported/rc overalls skin tone 3.png-8a72a998ad89b357932a5e60addb0ef4.ctex"]
 
 [params]
 

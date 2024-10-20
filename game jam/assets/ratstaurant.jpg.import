@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://br42bu4ob1k8l"
-path="res://.godot/imported/date or die.png-572928e1cd384e1c37dc231f2800e085.ctex"
+uid="uid://lnd5hejvgmdf"
+path="res://.godot/imported/ratstaurant.jpg-3aca127e79a4e1a059c148ba6b041268.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/date or die.png"
-dest_files=["res://.godot/imported/date or die.png-572928e1cd384e1c37dc231f2800e085.ctex"]
+source_file="res://assets/ratstaurant.jpg"
+dest_files=["res://.godot/imported/ratstaurant.jpg-3aca127e79a4e1a059c148ba6b041268.ctex"]
 
 [params]
 
