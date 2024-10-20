@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crx4lbofffy4x"
-path="res://.godot/imported/start.png-a5a7da500e1adfefc40075557e0c6654.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://dh2fewi2chl60"
+valid=false
 
 [deps]
 
-source_file="res://assets/start.png"
-dest_files=["res://.godot/imported/start.png-a5a7da500e1adfefc40075557e0c6654.ctex"]
+source_file="res://assets/ratstaurant_dither.jpg"
 
 [params]
 
