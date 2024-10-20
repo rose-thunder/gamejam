@@ -158,7 +158,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 script = ExtResource("1_sg3f0")
 
 [node name="right" type="TextureButton" parent="."]
@@ -243,7 +243,7 @@ texture_pressed = ExtResource("12_i0hrp")
 texture_hover = ExtResource("12_i0hrp")
 script = ExtResource("13_45uu6")
 
-[node name="RCSkin" type="AnimatedSprite2D" parent="."]
+[node name="RCSkin" type="AnimatedSprite2D" parent="." groups=["Persist"]]
 z_index = 1
 position = Vector2(975.25, 448.501)
 scale = Vector2(11.9922, 11.3594)
@@ -251,7 +251,7 @@ sprite_frames = SubResource("SpriteFrames_cuaqb")
 animation = &"RC4"
 frame_progress = 0.916827
 
-[node name="RCHair" type="AnimatedSprite2D" parent="."]
+[node name="RCHair" type="AnimatedSprite2D" parent="." groups=["Persist"]]
 z_index = 1
 position = Vector2(973.5, 409)
 scale = Vector2(11.2031, 10.4062)

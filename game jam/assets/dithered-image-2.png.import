@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpa84mr7sifep"
-path="res://.godot/imported/aquarium.jpg-603fa4ccb8bf9ca8dfcf69b68ce595e7.ctex"
+uid="uid://b6ve8ri0qc2cg"
+path="res://.godot/imported/dithered-image-2.png-3aad8ac798da6b8d2519127d4d3d94cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/aquarium.jpg"
-dest_files=["res://.godot/imported/aquarium.jpg-603fa4ccb8bf9ca8dfcf69b68ce595e7.ctex"]
+source_file="res://assets/dithered-image-2.png"
+dest_files=["res://.godot/imported/dithered-image-2.png-3aad8ac798da6b8d2519127d4d3d94cb.ctex"]
 
 [params]
 

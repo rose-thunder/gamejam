@@ -1,14 +1,58 @@
-[gd_scene load_steps=3 format=3 uid="uid://bxrti83d7ghuv"]
+[gd_scene load_steps=9 format=3 uid="uid://bxrti83d7ghuv"]
 
-[ext_resource type="Texture2D" uid="uid://d0skw13c1wvgf" path="res://assets/text_box.png" id="1_md36v"]
+[ext_resource type="Texture2D" uid="uid://sn0nbrr0r2cd" path="res://assets/dithered-image.png" id="2_mn0wn"]
 [ext_resource type="PackedScene" uid="uid://dmc0q5fqvb1ro" path="res://scenes/typing.tscn" id="2_oqss7"]
+[ext_resource type="Texture2D" uid="uid://b6ve8ri0qc2cg" path="res://assets/dithered-image-2.png" id="3_y20gh"]
+[ext_resource type="Texture2D" uid="uid://dxg3dqcc0ej80" path="res://assets/dithered-image-3.png" id="4_v2l5y"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_427h2"]
+atlas = ExtResource("2_mn0wn")
+region = Rect2(0, 0, 500, 312)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cyva2"]
+atlas = ExtResource("3_y20gh")
+region = Rect2(0, 0, 500, 329)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1hss2"]
+atlas = ExtResource("4_v2l5y")
+region = Rect2(0, 0, 500, 666)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yfbjm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_427h2")
+}],
+"loop": true,
+"name": &"aquarium",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cyva2")
+}],
+"loop": true,
+"name": &"arcade",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1hss2")
+}],
+"loop": true,
+"name": &"union",
+"speed": 5.0
+}]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="background" type="Sprite2D" parent="."]
-
-[node name="textBox" type="Sprite2D" parent="."]
-position = Vector2(960, 900)
-texture = ExtResource("1_md36v")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
 [node name="Typing" parent="." instance=ExtResource("2_oqss7")]
+
+[node name="background" type="AnimatedSprite2D" parent="."]
+z_index = -1
+position = Vector2(325, 112.881)
+scale = Vector2(2.56, 2.08583)
+sprite_frames = SubResource("SpriteFrames_yfbjm")
+animation = &"aquarium"

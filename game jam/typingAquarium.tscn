@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cioiawdt8x0vw"]
+
+[ext_resource type="Texture2D" uid="uid://cjoy6agxn0411" path="res://assets/aquarium.jpg" id="1_lrwqg"]
+[ext_resource type="PackedScene" uid="uid://dmc0q5fqvb1ro" path="res://scenes/typing.tscn" id="2_qlpsm"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="background" type="Sprite2D" parent="."]
+texture = ExtResource("1_lrwqg")
+
+[node name="Typing" parent="." instance=ExtResource("2_qlpsm")]
