@@ -37,7 +37,7 @@ var text_list_two = ["Hello there.","Nice to see you again!","And you as well.",
 	"Yeah that works. I'll See ya later!","                      "]
 var text_list_three = []
 var the_script = [text_list_one,text_list_two,text_list_three]
-var now_list = 1
+var now_list = 0
 var text_index = 0
 var typeable = false
 var minute_time = 5
