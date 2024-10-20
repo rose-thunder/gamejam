@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crx4lbofffy4x"
-path="res://.godot/imported/start.png-a5a7da500e1adfefc40075557e0c6654.ctex"
+uid="uid://blj10d26ng766"
+path="res://.godot/imported/rc open mouth.png-9e5f431794e5c2bebd7f0a2bdd231b9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/start.png"
-dest_files=["res://.godot/imported/start.png-a5a7da500e1adfefc40075557e0c6654.ctex"]
+source_file="res://assets/RC/rc open mouth.png"
+dest_files=["res://.godot/imported/rc open mouth.png-9e5f431794e5c2bebd7f0a2bdd231b9a.ctex"]
 
 [params]
 

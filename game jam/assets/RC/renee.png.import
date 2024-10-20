@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crx4lbofffy4x"
-path="res://.godot/imported/start.png-a5a7da500e1adfefc40075557e0c6654.ctex"
+uid="uid://cj417rthqu104"
+path="res://.godot/imported/renee.png-29ebcf246d286482770eb8243ce2be58.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/start.png"
-dest_files=["res://.godot/imported/start.png-a5a7da500e1adfefc40075557e0c6654.ctex"]
+source_file="res://assets/RC/renee.png"
+dest_files=["res://.godot/imported/renee.png-29ebcf246d286482770eb8243ce2be58.ctex"]
 
 [params]
 

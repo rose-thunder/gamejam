@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crx4lbofffy4x"
-path="res://.godot/imported/start.png-a5a7da500e1adfefc40075557e0c6654.ctex"
+uid="uid://bdcads7hvosh1"
+path="res://.godot/imported/rc overalls skin tone 1.png-ab46c4546cef3cb9ab71216b54150156.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/start.png"
-dest_files=["res://.godot/imported/start.png-a5a7da500e1adfefc40075557e0c6654.ctex"]
+source_file="res://assets/RC/rc overalls skin tone 1.png"
+dest_files=["res://.godot/imported/rc overalls skin tone 1.png-ab46c4546cef3cb9ab71216b54150156.ctex"]
 
 [params]
 
