@@ -236,5 +236,11 @@ offset_right = -98.0
 offset_bottom = 339.0
 theme_override_fonts/font = ExtResource("3_c5b2s")
 theme_override_font_sizes/font_size = 32
-text = "Mario"
+text = "Eugene"
 horizontal_alignment = 1
+
+[node name="scene" type="Label" parent="."]
+offset_left = 1011.0
+offset_top = 80.0
+offset_right = 1155.0
+offset_bottom = 149.0
