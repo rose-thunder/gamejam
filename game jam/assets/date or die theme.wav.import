@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cf3h3nknj0wk4"
+path="res://.godot/imported/date or die theme.wav-11cb4d1316e605b6d8a9d0d782b93ccf.sample"
+
+[deps]
+
+source_file="res://assets/date or die theme.wav"
+dest_files=["res://.godot/imported/date or die theme.wav-11cb4d1316e605b6d8a9d0d782b93ccf.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,5 +1,6 @@
 extends Node2D
-var RC_name = 'Jebediah'
+
+var RC_name = Global.get("RC")
 var timer = 30
 var rizz = 50
 var faded = 1
@@ -38,16 +39,18 @@ var text_list_two = ["Hello there.","Nice to see you again!","And you as well.",
 var text_list_three = []
 var the_script = [text_list_one,text_list_two,text_list_three]
 var now_list = 0
-var text_index = 29
+var text_index = 0
 var typeable = false
 var minute_time = 5
 var once_please = false
 var death_time = 5
 
 func _ready():
-	pass 
+	pass
 
 func _process(delta):
+	Global.get("index")
+	Global.get("index1")
 	$scene.text = str(now_list)
 	if text_index > len(the_script[now_list])-2:
 		$fade.play("fadein")

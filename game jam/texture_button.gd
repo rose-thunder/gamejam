@@ -14,7 +14,7 @@ func _process(delta: float) -> void:
 var rc1 = load("res://assets/RC/rc overalls skin tone 4.png")
 
 func _on_pressed() -> void:
-	
+	pass
 	#prite.texture = rc_1
 	
 	

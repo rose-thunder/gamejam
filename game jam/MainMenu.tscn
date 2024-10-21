@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://b8ophk67ymsjf"]
 
-[ext_resource type="Texture2D" uid="uid://br42bu4ob1k8l" path="res://assets/date or die.png" id="1_7ltbb"]
+[ext_resource type="Texture2D" uid="uid://bcapywstfn6km" path="res://assets/date or die.png" id="1_7ltbb"]
 [ext_resource type="Texture2D" uid="uid://ubxwvcob72yl" path="res://assets/checkerboards/checkerboard3.png" id="1_8wnag"]
 [ext_resource type="Script" path="res://main_menu.gd" id="1_mv2u7"]
-[ext_resource type="Texture2D" uid="uid://crx4lbofffy4x" path="res://assets/start.png" id="3_d3jn3"]
+[ext_resource type="Texture2D" uid="uid://ccmrhf3k5r2yy" path="res://assets/start.png" id="3_d3jn3"]
 
 [sub_resource type="Animation" id="Animation_k7pvj"]
 length = 0.001

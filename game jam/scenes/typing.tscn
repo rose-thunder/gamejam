@@ -1,11 +1,11 @@
 [gd_scene load_steps=21 format=3 uid="uid://dmc0q5fqvb1ro"]
 
 [ext_resource type="Script" path="res://typing.gd" id="1_6xqec"]
-[ext_resource type="Texture2D" uid="uid://d0skw13c1wvgf" path="res://assets/text_box.png" id="2_70ojx"]
+[ext_resource type="Texture2D" uid="uid://dbmarj3gak6by" path="res://assets/text_box.png" id="2_70ojx"]
 [ext_resource type="FontFile" uid="uid://30oag2tv4q1w" path="res://assets/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf" id="3_c5b2s"]
-[ext_resource type="Texture2D" uid="uid://cukj14tqqdbex" path="res://assets/rizzometer_empty.png" id="4_7afme"]
-[ext_resource type="Texture2D" uid="uid://l23xm6pe1tt6" path="res://assets/rizzometer_full.png" id="5_bacmk"]
-[ext_resource type="Texture2D" uid="uid://uswpuhbt5l3s" path="res://assets/rizzometer_half.png" id="6_smns2"]
+[ext_resource type="Texture2D" uid="uid://dl01um3fs23lk" path="res://assets/rizzometer_empty.png" id="4_7afme"]
+[ext_resource type="Texture2D" uid="uid://psnwki4m21qg" path="res://assets/rizzometer_full.png" id="5_bacmk"]
+[ext_resource type="Texture2D" uid="uid://ccnesgf43wam8" path="res://assets/rizzometer_half.png" id="6_smns2"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2o70k"]
 

@@ -13,6 +13,10 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	var RCName = $textBox/TextEdit.text
 	
+	Global.set("RC", RCName)
+	Global.set("index", index)
+	Global.set("index1", index1)
+	
 	if index == 0:
 		$RCSkin.play("RC1")
 	elif index == 1:
@@ -49,9 +53,9 @@ func _on_right_pressed() -> void:
 	pass
 
 func _on_start_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/typing.tscn")
 	var save = Save.new()
 	save.save_game()
+	get_tree().change_scene_to_file("res://typingBackground.tscn")
 	pass # Replace with function body.
 
 
