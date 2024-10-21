@@ -13,7 +13,7 @@ func save_game():
 	config.set_value("RC", "skin_tone", Global.get("index"))
 	config.set_value("RC", "hairstyle", Global.get("index1"))
 	
-	config.save("res://RC.cfg")
+	config.save("user://RC.cfg")
 	
 	print("Data Saved!")
 	pass
@@ -22,7 +22,7 @@ func load_game():
 	var rc_data = {}
 	var config = ConfigFile.new()
 	
-	var err = config.load("res://RC.cfg")
+	var err = config.load("user://RC.cfg")
 	
 	if err != OK:
 		return

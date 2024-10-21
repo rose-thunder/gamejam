@@ -13,7 +13,7 @@ func _process(delta: float) -> void:
 
 
 func _on_texture_button_pressed() -> void:
-	if not FileAccess.file_exists("res://RC.cfg"):
+	if not FileAccess.file_exists("user://RC.cfg"):
 		get_tree().change_scene_to_file("res://characterCustomization.tscn")
 	else:
 		save.load_game()
