@@ -253,8 +253,8 @@ frame_progress = 0.916827
 
 [node name="RCHair" type="AnimatedSprite2D" parent="." groups=["Persist"]]
 z_index = 1
-position = Vector2(973.5, 409)
-scale = Vector2(11.2031, 10.4062)
+position = Vector2(975, 402)
+scale = Vector2(11.25, 10.2188)
 sprite_frames = SubResource("SpriteFrames_6b7au")
 animation = &"Jack"
 
